@@ -9,6 +9,21 @@ export const Home = () => {
 				<Link to="/demo">
 					<button className="btn btn-success">Add new contact</button>
 				</Link>
+				<ul>
+					<li>
+						<img />
+						<div>
+							<p>name</p>
+							<p>address</p>
+							<p>number</p>
+							<p>email</p>
+						</div>
+						<div>
+							<span>edit</span>
+							<span>erase</span>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	);
