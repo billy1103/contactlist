@@ -10,7 +10,39 @@ export const Demo = () => {
 
 	return (
 		<div className="container">
-			<ul className="list-group">
+			<h1>Add a new contact</h1>
+			<form>
+				<div>
+					<label>
+						Full Name
+						<input
+							placeholder="Full Name" />
+					</label>
+				</div>
+				<div>
+					<label>
+						Email
+						<input
+							placeholder="Enter email" />
+					</label>
+				</div>
+				<div>
+					<label>
+						Phone
+						<input
+							placeholder="Enter phone" />
+					</label>
+				</div>
+				<div>
+					<label>
+						Address
+						<input
+							placeholder="Enter address" />
+					</label>
+				</div>
+				<button>save</button>
+			</form>
+			{/* <ul className="list-group">
 				{store.list.map((item, index) => {
 					return (
 						<li
@@ -30,13 +62,14 @@ export const Demo = () => {
 							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
 								Change Color
 							</button>
+							
 						</li>
 					);
 				})}
-			</ul>
-			<br />
+			</ul> */}
+
 			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
+				<button className="btn btn-primary">or get back to contacts</button>
 			</Link>
 		</div>
 	);

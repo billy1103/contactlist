@@ -1,9 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			list: [
-
-			]
+			list: []
 		},
 		actions: {
 			getData: () => {
@@ -12,9 +10,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					redirect: 'follow'
 				})
 					.then(response => response.json())
-					.then(result => setStore({list: result}))
+					.then(result => setStore({ list: result }))
 					.catch(error => console.log('error', error));
-			}
+			},
 		}
 	};
 };
