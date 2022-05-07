@@ -7,6 +7,7 @@ import "../../styles/demo.css";
 
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
+	const [state, setState] = useState()
 
 	return (
 		<div className="container">
@@ -16,7 +17,12 @@ export const Demo = () => {
 					<label>
 						Full Name
 						<input
-							placeholder="Full Name" />
+							placeholder="Full Name"
+							onChange={ ()=> 
+								setState(
+									{...state,
+									full_name: e.target.value})} 
+									value={state}/>
 					</label>
 				</div>
 				<div>
